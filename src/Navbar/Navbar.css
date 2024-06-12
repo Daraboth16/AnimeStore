@@ -1,0 +1,54 @@
+/* Navbar.css */
+.link {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+  font-family: 'YourFontFamily'; /* Replace with your actual font family */
+  font-weight: 600;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: yellow;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.link:hover::after {
+  width: 50%;
+  left: 50%;
+  margin-left: -25%;
+}
+
+.active-link {
+  font-weight: bold;  /* Example active link styling */
+}
+
+.link.active {
+  color: #FACC15; /* Change to text-blue-500 in Tailwind CSS */
+}
+
+.sticky-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Higher than the popup */
+  padding: 0.75rem 1.5rem;
+  backdrop-filter: blur(20px); /* Optional: adds a blur effect */
+}
+
+.blur {
+  backdrop-filter: blur(10px);
+}
+
+.link {
+  @apply text-gray-300 hover:text-white no-underline font-bold;
+}
+
+.active {
+  @apply border-b-2 border-white;
+}

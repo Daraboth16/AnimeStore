@@ -1,0 +1,18 @@
+/* Product.css */
+.modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1050; /* Higher than the navbar's z-index */
+  }
+  .modal-content {
+    background: #0F172A;
+    width: 70%;
+    max-height: 700px;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-y: auto;
+  }

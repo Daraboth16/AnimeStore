@@ -1,0 +1,32 @@
+/* index.css */
+body {
+    @apply bg-[#0F172A];
+}
+
+.form-control:focus {
+    @apply shadow-none border-purple-400;
+}
+
+.profile-button {
+    @apply bg-purple-700 shadow-none border-none;
+}
+
+.profile-button:hover {
+    @apply bg-purple-900;
+}
+
+.profile-button:focus {
+    @apply bg-purple-900 shadow-none;
+}
+
+.profile-button:active {
+    @apply bg-purple-900 shadow-none;
+}
+
+.labels {
+    @apply text-xs;
+}
+
+.add-experience:hover {
+    @apply bg-purple-400 text-white cursor-pointer border-purple-400;
+}
