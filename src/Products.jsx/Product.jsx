@@ -246,7 +246,7 @@ function Product() {
         </button>
         {/* EyeIcon Display Product Detail */}
         {selectedProduct && (
-          <div className="fixed inset-0 lg:mt-[190px] flex items-center justify-center bg-black bg-opacity-50 z-1050">
+          <div className="fixed inset-0 lg:mt-[90px] flex items-center justify-center bg-none bg-opacity-50 z-1050">
             <div className="bg-[#0F172A] flex md:w-[70%] lg:w-[50%] md:h-[400px] lg:h-[500px] rounded-md px-[20px] md:px-[20px] lg:px-[50px] md:py-2 lg:py-4">
               {/* img side */}
               <div className="w-[55%] h-[100%] ">

@@ -32,7 +32,7 @@ const handleClickDetail=()=>{
         </div>
         <div></div>
       </div>
-      <div className="absolute max-w-[500px] top-[315px] lg:top-[400px] font-font left-[50px]">
+      <div className="absolute max-w-[500px] top-[315px] lg:top-[200px] font-font left-[50px]">
         <h1 className="text-yellow-300 italic text-4xl md:text-5xl lg:text-6xl ">#{id} Trending</h1>
         <h2 className="lg:mt-4  text-white font-semibold">{title}</h2>
         <p className=" lg:mt-2 text-gray-300 italic text-[15px] lg:text-xl line-clamp-2 lg:line-clamp-3">{description}</p>

@@ -1,3 +1,5 @@
+
+import wall from "../assets/image/wallpaper.jpg"
 var heroData = [
     {
       id: 1,

@@ -4,6 +4,7 @@ function CartPage() {
   return (
     <div className="bg-[#0F172A] h-full">
       <NavBar />
+      <div className="mt-[130px]"></div>
       <Cart />
     </div>
   );

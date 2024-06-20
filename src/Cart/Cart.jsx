@@ -45,7 +45,7 @@ const Cart = () => {
   };
   const nav = useNavigate();
   const clickHome = () => {
-    nav("/");
+    nav("/shop");
   };
  
   return (
