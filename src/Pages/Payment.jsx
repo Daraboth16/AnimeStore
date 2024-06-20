@@ -2,9 +2,23 @@ import React, { useContext, useState } from "react";
 import { CartContext } from "../Data/CartContext";
 import { useNavigate } from "react-router-dom";
 import Footer2 from "../Footer/Footer2";
+import { toast } from "react-hot-toast";
+
+// Custom toast component
+const EmptyCartToast = ({ navigate }) => (
+  <div>
+    <p className="text-white">Your cart is empty. Please go shopping.</p>
+    <button
+      onClick={() => navigate("/shop")}
+      className="bg-blue-600 text-white p-2 rounded mt-2"
+    >
+      Back to Shopping
+    </button>
+  </div>
+);
 
 const Payment = () => {
-  const { cartItems } = useContext(CartContext);
+  const { cartItems, clearCart } = useContext(CartContext);
   const [cardNumber, setCardNumber] = useState("");
   const [expirationDate, setExpirationDate] = useState("");
   const [cvc, setCvc] = useState("");
@@ -14,13 +28,18 @@ const Payment = () => {
     0
   );
 
-  const nav = useNavigate();
+  const navigate = useNavigate();
   const handleBack = () => {
-    nav("/cart");
+    navigate("/cart");
   };
 
-  const handlePay = () => {
-    // Handle payment logic here
+  const handlePayment = () => {
+    if (cartItems.length === 0) {
+      toast.custom(<EmptyCartToast navigate={navigate} />);
+      return;
+    }
+    toast.success("Payment successful");
+    clearCart();
   };
 
   return (
@@ -92,7 +111,7 @@ const Payment = () => {
           </div>
           <div className="flex justify-center">
             <button
-              onClick={handlePay}
+              onClick={handlePayment}
               className="bg-blue-600 text-white p-2 rounded w-full"
             >
               Pay

@@ -8,7 +8,7 @@ function Shop() {
   return (
     <div className='bg-[#0F172A]'>
        <NavBar/>
-       <div className="mt-[170px]"></div>
+       <div className="mt-[50px] lg:mt-[170px]"></div>
        <ShopHeader/>
        <Product/>
        <Footer2/>

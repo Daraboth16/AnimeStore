@@ -27,7 +27,7 @@ const ContactForm = () => {
 
       <div className="bg-[#0F172A]">
         <Navbarr/>
-        <div className="mt-[170px]"></div>
+        <div className="lg:mt-[170px]"></div>
         <div className="container mx-auto  bg-[#1F2937] p-8 ">
         <h1 className="text-2xl font-semibold text-center mb-4 text-white">Contact Us</h1>
         <h2 className="text-3xl font-bold text-center mb-8 text-white">Let s talk about your project</h2>

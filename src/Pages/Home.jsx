@@ -11,7 +11,7 @@ const Home = () => {
     <>
       <div className="bg-[#0F172A] h-full">
         <NavBar />
-        <div className="mt-[20px]"></div>
+        <div className="mt-[20px] lg:mt-[20px]"></div>
         <Hero />
         <TextToVideoSection/>
         <Feedback/>

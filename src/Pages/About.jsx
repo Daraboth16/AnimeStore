@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className='bg-[#0F172A]'>
       <Navbarr/>
-      <div className="mt-[170px]"></div>
+      <div className="mt-[50px] lg:mt-[170px]"></div>
       <div className="font-sans p-8 space-y-16 text-white">
       {/* About Us Section */}
       <div>
